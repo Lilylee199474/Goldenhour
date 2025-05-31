@@ -1,0 +1,651 @@
+@charset "UTF-8";
+img {
+  display: block;
+}
+
+p{
+ line-height: 1.6rem; 
+ font-size: clamp(8px, 1.4vw, 16px);
+ font-weight: 400;
+ color: black;
+}
+
+body {
+  font-family: 'Noto Sans TC', serif;
+  margin: 0;
+}
+
+h1{
+  font-weight: 500;
+}
+
+.wrapper {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color:w;
+  color: #fff;
+  line-height: 1;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 82%;
+  max-width: 992px;
+  margin: 10rem auto 10rem;
+}
+
+h2 {
+  font-size: clamp(20px, 5vw, 48px); 
+  font-weight: 500;
+  color: rgb(24, 111, 214);
+  text-align: center;
+}
+
+h3 {
+  font-size: clamp(16px, 5vw, 26px); 
+  font-weight: 500;
+  color: black;
+}
+
+h4 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.small {
+  font-size: 14px;
+}
+
+.forM {
+  display: none;
+}
+
+.kv{
+  padding-top: 60px;
+}
+
+.kv-forPC {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 100%;
+}
+
+.sec {
+  padding: 0 0 50px;
+}
+.sec h2 {
+  margin-bottom: 30px;
+}
+
+.btn_group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.btn_group .event_btn,
+.btn_group .step_btn {
+  background: #80FEFF;
+}
+.btn_group .event_btn:hover,
+.btn_group .step_btn:hover {
+  background: #00A29A;
+}
+
+.kv h1 {
+  display: block;
+  margin-top: 0;
+}
+.kv .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #051A2A;
+}
+.kv .nav li {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  aspect-ratio: 320/180;
+}
+.kv .nav li .logo {
+  width: 63.75%;
+  max-width: 204px;
+}
+.kv .nav li .poster {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+
+.kv .kv-wrapper{
+  position: relative;
+  width: 100%;
+  display: block;
+  margin: 0;
+}
+
+.kv .kv-wrapper .kv-forPC{
+  width: 100%;
+  display: block;
+}
+
+.kv .kv-wrapper .wave{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  pointer-events: none; /* wave 不會擋點擊事件 */
+}
+
+.kv-text{
+  position: absolute;
+  bottom: 35%;
+  left: 20%;
+}
+
+.kv-text p{
+  letter-spacing: 0.1rem;
+  color: white;
+  font-size: clamp(8px, 1.4vw, 16px);
+  font-weight: 100;
+}
+
+ .kv .kv-wrapper .kv-text .p-br{
+  display: none;
+}
+
+.kv-text h1{
+letter-spacing: 0.4rem;
+font-size: clamp(28px, 5vw, 70px); /* 最小28px，最大70px，隨螢幕寬度變化 */
+}
+
+.sec2 h2 {
+  margin: 40px auto 20px;
+  padding-top: 60px;
+}
+.sec2 .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 60px;
+}
+
+.sec2 .container .sec2-1{
+  text-align: center;
+  margin-top: 50px;
+}
+.sec3 {
+  padding-top: 60px;
+  background-color: #fff;
+}
+
+.sec3 h2 {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.sec3-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 0 5%;
+  max-width: 1200px;     /* ✨ 限制最大寬度 */
+  margin: 0 auto;        /* ✨ 水平置中 */
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin-bottom: 4%;
+}
+
+.sec3-flex2{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 0 5%;
+  max-width: 1200px;     /* ✨ 限制最大寬度 */
+  margin: 0 auto;        /* ✨ 水平置中 */
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin-bottom: 4%;
+}
+
+.sec3-flex3 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 0 5%;
+  max-width: 1200px;     /* ✨ 限制最大寬度 */
+  margin: 0 auto;        /* ✨ 水平置中 */
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin-bottom: 4%;
+}
+
+.sec3-flex2-bg{
+  background-image: url('../images/sec3bg.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 8% 5%;
+}
+
+.sec3-flex3-bg{
+  background-image: url('../images/sec3bg2.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 8% 5%;
+  background-position: bottom;
+}
+
+
+.sec3-left {
+  width: 48%;
+}
+
+.sec3-left h3 {
+  color: #073e81;
+  font-size: clamp(20px, 2vw, 32px);
+  margin-bottom: 16px;
+}
+
+.sec3-left p {
+  line-height: 1.6;
+  color: #333;
+}
+
+.sec3-right {
+  width: 48%;
+}
+
+.sec3-right img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+  .sec3 .sec3-right .sec3-forM{
+    display: none;
+  }
+
+.sec3 .sec3all{
+  margin-top: 6%;
+  width: 100%;
+}
+
+.sec4{
+  background: linear-gradient(to top, #e6e8ef, #ffffff);
+  padding-bottom: 3%;
+  padding-top: 60px;
+  position: relative;
+}
+
+.sec4 img{
+  width: 100%;
+  max-width: 700px; /* 可調整最大寬度 */
+  height: auto;
+  display: block;
+  margin: 0 auto; /* ✨ 重點：讓圖片置中 */
+}
+
+.sec4 .waveforsec4 .wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 1920px;
+}
+
+.sec4 .waveforsec4{
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;       /* 防止超出 */
+  z-index: 0;
+  padding-top: 2%;
+}
+
+
+
+.sec4 p{
+  display: block;
+  text-align: center;
+}
+
+.sec5 p{
+  display: block;
+  text-align: center;
+}
+
+.sec4 .p-br{
+  display: none;
+}
+
+.sec5{
+  padding-bottom: 5%;
+}
+
+@media screen and (max-width: 820px) {
+.container{
+margin: 5rem auto 2rem;  
+}
+
+ p{
+  font-size: clamp(14px, 2.6vw, 16px);
+ }
+
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  .forM {
+    display: block;
+    width: 100%;
+  }
+  .kv .kv-wrapper .kv-img .kv-forPC {
+    display: none;
+  }
+
+  .kv .kv-wrapper .kv-text h1 {
+    font-size: clamp(24px, 4.63vw, 36px);
+  }
+
+  .kv .kv-wrapper .kv-text p {
+  font-size: clamp(12px, 2.6vw, 16px);
+}
+
+  .kv .kv-wrapper .kv-text .p-br{
+  display: block;
+}
+
+  .sec2 .content {
+    width: 360px;
+    margin: 0 auto 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .sec2 .content .film {
+    width: 160px;
+    -webkit-box-flex: unset;
+        -ms-flex-positive: unset;
+            flex-grow: unset;
+    margin-bottom: 20px;
+  }
+  .sec2 .content .film h3 {
+    margin-bottom: 10px;
+  }
+  .sec2 .content .film:nth-child(2), .sec2 .content .film:nth-child(4) {
+    -webkit-transform: translateY(50px);
+            transform: translateY(50px);
+  }
+
+  .kv .kv-wrapper .kv-text{
+    position: absolute;
+    bottom: 50%;
+    left: 46%;
+  }
+
+    .kv .kv-wrapper .kv-text p{
+    line-height: 1.5;
+  }
+
+  .sec3-flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .sec3-flex2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sec3-left,
+  .sec3-right {
+    width: 100%;
+  }
+
+  .sec3-right {
+    margin-top: 24px;
+  }
+ 
+  .sec3 .sec3-right .sec3-forPC{
+    display: none;
+  }
+
+    .sec3 .sec3-right .sec3-forM{
+    display: block;
+  }
+
+  .sec3-left {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+    .sec3-left h3 {
+   margin-bottom: 2%;
+  }
+    .sec3-left p{
+   margin-top: 2%;
+  }
+
+  .sec3 .sec3-flex{
+    gap: 8%;
+  }
+  .sec3 .sec3all {
+    margin-top: 3%;
+}
+
+.sec3-flex2-bg {
+    background-image: url('../images/sec3bg-m.webp');
+    padding-bottom: 55%;
+    padding-top: 40px;
+    background-position: bottom;
+  }
+
+  .sec3-flex3-bg {
+    background-image: url('../images/sec3bg2-m.webp');
+    padding-bottom: 55%;
+    padding-top: 40px;
+    background-position: bottom;
+  }
+
+  .sec3 h2{
+    margin-bottom: 32px;
+  }
+
+  .sec4 .p-br{
+  display: block;
+}
+
+}
+@media screen and (max-width: 580px) {
+  .sec4 .table_container {
+    padding-left: 32px;
+  }
+  .sec4 .table_container p {
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.forM {
+        display: none;
+    }
+
+.kv .kv-wrapper .kv-img .kv-forPC{
+  display: block;
+}
+ 
+  h2{
+    font-size: 40px;
+  }
+
+  p{
+font-size: 20px;
+  }
+
+  .kv .kv-wrapper .kv-text .p-br{
+  display: block;}
+
+ .kv .kv-wrapper .kv-text {
+        position: absolute;
+        bottom: 20%;
+        left: 12%;
+    }
+
+.kv .kv-wrapper .kv-text h1 {
+    font-size: 48px;
+    }
+
+.kv .kv-wrapper .kv-text p {
+    font-size: 20px;
+    }
+
+.sec3 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+  .sec3-left h3 {
+    font-size: 28px;
+  }
+
+  .sec3-left p {
+    font-size: 20px;
+    line-height: 1.6;
+  }
+
+  .sec3-left,
+  .sec3-right {
+    width: 100%;
+    text-align: center; /* 如果你希望文字也在這段置中 */
+    margin-top: 10px;
+  }
+
+  .sec3-right {
+    margin-top: 24px;
+  }
+
+.sec3 .sec3all {
+    margin-top: 3%;
+}
+
+.sec3-flex2-bg {
+    background-image: url('../images/sec3bg-m.webp');
+    padding-bottom: 60%;
+    padding-top: 40px;
+    background-position: bottom;
+  }
+
+    .sec3-flex3-bg {
+    background-image: url('../images/sec3bg2-m.webp');
+    padding-bottom: 60%;
+    padding-top: 40px;
+    background-position: bottom;
+  }
+
+    .sec4 .table_container p {
+    padding-right: 32px;
+  }
+}
+
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 24px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #186fd6;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 3px;
+  background: #186fd6;
+  border-radius: 2px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
